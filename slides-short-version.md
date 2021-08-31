@@ -6,21 +6,21 @@ author: m4dz
 twitter: m4d_z
 info: >
   For many years, we have migrated all our DevTools to Node.js for the sake of
-  simplicity: a common language (JS/TS), a large ecosystem (NPM), and a powerful
+  simplicity: a common language (JS/TS), a huge ecosystem (NPM), and a powerful
   engine. In the meantime, we moved a lot of computation tasks to the
-  client-side thanks to PWA and JavaScript Hegemony.
+  client side thanks to PWA and JavaScript Hegemony.
 
 
   So we made Webapps for years, developing with awesome reactive frameworks and
   bundling a lot of dependencies. We progressively moved from our simple to
-  complex apps toolchains. We've become the new Java-like ecosystem. It sucks.
+  complex app toolchains. We've become the new Java-like ecosystem. It sucks.
 
 
-  It's 2021, we've got a lot of new technologies to sustain our Users'
-  eXperience. It's time to have a break and rethink our tools rather than going
-  faster and faster in the same direction. It's time to redesign the Developer
-  eXperience. It's time for a bundle-free dev environment. It's time to embrace
-  a new frontend building philosophy, still with our lovely JavaScript
+  It's 2021, we have a lot of new technologies to sustain our users'
+  experience. It's time to have a break and rethink our tools rather than going
+  faster and faster in the same direction. It's time to redesign the developer
+  experience. It's time for a bundle-free developers’ environment. It's time to embrace
+  a new front end building philosophy, still with our lovely JavaScript.
 
 
   Introducing Snowpack, Vite, and other Bare Modules tools concepts!
@@ -30,9 +30,9 @@ The Eternal Sunshine of the
 
 ---
 
-# The Modern <mark>Front-end</mark> Development Stack
+# The Modern <mark>Front end</mark> Development Stack
 
-- Templating Engines
+- Templates Engines
 - CSS Pre-processors
 - PostCSS
 - Reactive UI Framework
@@ -66,8 +66,8 @@ background: img/danist-8Gg2Ne_uTcM-unsplash.jpg
     });
   })(window, document);
   ```
-- CommonJS format vs ES Modules
-- Bundling for the Web (Browserify, etc)
+- CommonJS format vs. ES Modules
+- Bundling for the Web (Browserify, etc.)
 - Perfomance matters
 
 ---
@@ -92,7 +92,7 @@ background: img/danist-8Gg2Ne_uTcM-unsplash.jpg
 layout: punch
 ---
 
-Web Evolved, <br>
+Web Evolved <br>
 we still rely on tough foundations (HTML/CSS/JS) <br>
 but we need <mark>high-level</mark> tools daily
 
@@ -118,8 +118,8 @@ DevTools Stack
 
 <v-clicks>
 
-- Webpack: Pack every part of your apps (JS, assets...)
-- Rollup/Parcel: Bundle the logics
+- Webpack: Pack every part of your app (JS, assets...)
+- Rollup/Parcel: Bundle the logic
 - Jest: Testing suite
 - TypeScript: Improve the language
 - Prettier: Reformat
@@ -228,7 +228,7 @@ class: sm
 - The Leader
 - Compatible Vue/[P]React/Svelte/Lit
 - `esbuild` for dev | Rollup for builds
-- Multi-Page support
+- multi-Page support
 - Library Mode
 - CSS Code-Splitting
 - Standard API
@@ -280,7 +280,7 @@ layout: 2-cols
   ```
   preview
     -> service-worker
-    -> vite-worker
+    -> vite worker
     -> service-worker
   -> preview
   ```
@@ -289,8 +289,8 @@ layout: 2-cols
 layout: punch
 ---
 
-It's a new generation of Devtools, <br>
-lead by great **communities** <br>
+It's a new generation of Devtools <br>
+led by great **communities** <br>
 (Skypack, Vue, Preact...)
 
 ---
