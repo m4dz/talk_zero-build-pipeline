@@ -3,7 +3,10 @@
   "scripts": {
     "dev": "slidev",
     "build": "slidev build",
-    "export": "slidev export"
+    "export": "slidev export",
+    "dev:short": "slidev slides-short-version.md",
+    "build:short": "slidev build slides-short-version.md",
+    "export:short": "slidev export slides-short-version.md"
   },
   "dependencies": {
     "@slidev/cli": "^0.22.6",
