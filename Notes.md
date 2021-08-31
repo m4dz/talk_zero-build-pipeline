@@ -1,0 +1,69 @@
+- Cover
+- Building Websites: How it started / How it ends
+- The Modern Frontend Development Stack
+- Me when I build websites (spinner)
+- Why Do We Need to *Compile* Websites?
+  - Back to the Future: using JS in the browser
+  - From JS IIFE to JS Modules
+  - Back to the Future: AMD
+  - Size Matters: How to WebPerf?!
+  - Back to the Future: Browserify
+  - The Registries (NPM)
+  - Modules Everywhere
+  - Packing: From Browserify to Webpack
+  - Moving to WebApps: the Assets challenge
+  - The transpillers: better doesn't mean simpler
+  - Super Size Me: The Still Relevant WebPerf Challenge
+  - This is why we're now *compiling* our Websites
+  - Web evolved, we build on strong fondations, but need top-level tools
+- The 2021 Web Building Pipeline
+  - Create app from CLI
+  - Scafold components
+  - then
+    - Require modules/tools/libs/helpers
+    - Add Routing/Store/... parts
+    - Go to step 2
+    - Be mad at tools configuration
+    - Finally get something working
+    - Enrich the project
+    - Hire a dedicated team to Operations
+    - Still wait 5' each time you save a file
+      (kidding but...)
+  - We intended to make developers life easier
+    but our devtools stack is overly complex
+  - If we *compile*, nothing should force us to go through the whole pipeline when in the dev process
+  - Improving the Developer eXperience
+    - Standardized ESM
+    - Superset of languages (TS, JSX...)
+    - Free from loading the whole NPM Registry locally
+    - Instant Startup!
+    - Built-in HMR support
+    - Extensible
+    - Focusing on dev, launching on prod
+- Solving the bottleneck: the bare-modules dev trend
+  - How it works?
+    - Use native modules support in the Browser
+    - transform non-JS modules to ES
+    - cache modules generation
+    - use HMR to re-inject updated content
+    - Rely on HTTP(/2)
+  - The Dev Pipeline (img)
+  - The Dependencies
+  - Build-on-request oriented
+  - *The Challengers*
+  - Snowpack
+  - Vite
+  - WMR
+  - Using `Vite` for real
+    - The Backlight Project
+    - Implementing Vite as a build backend
+    - Pros & Cons
+  - The Build pipeline (img)
+  - Why still bundling?
+  - Behind the hood: rollup / parcel / esbuild
+  - The Treeshaking mystery
+  - Extending the build (plugins)
+- Who Controls the past now controls the Future
+- It's a new exciting *war* between great actors (Skypack, Vue, Preact...)
+- ESM oriented Registries: Skypack, esm.sh, jspm
+- Plug it to your existing project
