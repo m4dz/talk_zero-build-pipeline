@@ -1,7 +1,7 @@
 ---
 title: Zero Build Pipeline
 theme: ../divRIOTS_slidev-theme
-permalink: https://talks.m4dz.net/zero-build/
+permalink: https://talks.m4dz.net/zero-build/short/
 author: m4dz
 twitter: m4d_z
 info: >
@@ -29,12 +29,6 @@ info: >
 The Eternal Sunshine of the
 
 ---
-layout: media
----
-
-<Figure src="img/meme.jpg" caption="Modern Web Development"/>
-
----
 
 # The Modern <mark>Front end</mark> Development Stack
 
@@ -45,22 +39,6 @@ layout: media
 - Packer/Bundler
 - Web Dev Server/Hot-Reload/HMR
 
----
-layout: media
----
-
-<Gif id="3orieJI3IdkKWIsAGA" caption="Web is 30 years old" class="h-4/5" />
-
----
-layout: punch
----
-
-Did you see
-<mark>HTML/CSS/JS</mark> <br>
-in the previous list?
-
----
-layout: media
 ---
 
 <Gif id="3og0ID5AW1SmPuG3u0" caption="npm run dev" class="h-4/5" />
@@ -73,33 +51,6 @@ background: img/danist-8Gg2Ne_uTcM-unsplash.jpg
 
 
 # Why Do We Compile Websites?
-
----
-layout: punch
----
-
-Developer eXperience is bloated, <br>
-thanks to our <mark>DevTools</mark>
-
----
-
-Back to the Future
-
-# Coding in the Browser, the Antique Way
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <p id="text"></p>
-  <script src="main.js"></script>
-</html>
-```
-
-```js
-window.addEventListener('DOMContentLoaded', (e) => {
-  document.getElementById('text').textContent = `Hello World!`
-});
-```
 
 ---
 
@@ -117,76 +68,33 @@ window.addEventListener('DOMContentLoaded', (e) => {
   ```
 - CommonJS format vs. ES Modules
 - Bundling for the Web (Browserify, etc.)
-
-::linkroll::
-- [MDN Glossary - IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
-- [Require.js - CommonJS / AMD](https://requirejs.org/docs/whyamd.html#commonjs)
-- [Browserify - require in the browser](https://browserify.org/)
-- [NPM & left-pad: Have We Forgotten How To Program?](https://www.davidhaney.io/npm-left-pad-have-we-forgotten-how-to-program/)
+- Perfomance matters
 
 ---
 
-# The Transpilers
+# The Transpillers
 
-- Inherited from FlashScript and CoffeeScript
 - Better doesn't mean simpler
-- Syntactic sugar on JS
-- Still only one JavaScript
+- Syntactic sugar
 
-<Gif id="3JNGvAym5kKzQrD4xt" class="h-2/5"/>
-
----
-
-# The Browser-as-a-VM Era
-
-Cross-platform binary with WebAssembly
-
-```rust
-mod utils;
-
-use wasm_bindgen::prelude::*;
-
-#[cfg(feature = "wee_alloc")]
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
-
-#[wasm_bindgen]
-extern {
-    fn alert(s: &str);
-}
-
-#[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, wasm-game-of-life!");
-}
-```
+<Gif id="3JNGvAym5kKzQrD4xt" caption="Transpilers" class="h-4/5"/>
 
 ---
 
-# This is why we're now <br> *compiling* our Websites
-
-<v-clicks>
+# This is why we're now *compiling* our Websites
 
 - Modules
 - Transpillers
 - New formats to support (WASM...)
-- <mark>Performance</mark> improvements
-
-</v-clicks>
+- Performance improvements
 
 ---
 layout: punch
 ---
 
-Web Evolved
-
-<v-clicks>
-
-We still rely on its foundations <small>(HTML/CSS/JS)</small>
-
-But we need <mark>high-level</mark> tools daily
-
-</v-clicks>
+Web Evolved <br>
+we still rely on tough foundations (HTML/CSS/JS) <br>
+but we need <mark>high-level</mark> tools daily
 
 ---
 layout: leaf
@@ -222,32 +130,12 @@ DevTools Stack
 </v-clicks>
 
 ---
-
-**As a...**
-- Front-end Developer
-
-**I want...**
-- a shitload of tools that mimic my browser features
-
-**So I...**
-- can wait eternally rather than coding my stuff
-
----
 layout: punch
 ---
 
 _Compiling_ for production <br>
 should not be mandatory <br>
 during <mark>development</mark>
-
----
-
-# Web Developer Super Powers
-
-- JavaScript Modules (ESM)
-- WebAssembly
-- Advanced Cache Policy
-- HTTP/2
 
 ---
 
@@ -314,28 +202,6 @@ confetti.create(document.getElementById('canvas'), {
 ::linkroll::
 - [Why Vite?](https://vitejs.dev/guide/why.html)
 - [How Snowpack Works](https://www.snowpack.dev/concepts/how-snowpack-works)
-
----
-
-# Why a Single File approach?
-
-- Fast builds
-- Deterministic
-- Easy to Debug
-- Dev speed unrelated to project size
-- Better cache
-
----
-layout: media
----
-
-<Figure src="./img/snowpack-unbundled-example-3.png" caption="Bundled vs. Unbundled approach in Snowpack" class="h-5/5" />
-
----
-layout: media
----
-
-<Gif id="dGtf1UhMLrcLm" caption="Our Challengers" class="h-3/5" />
 
 ---
 layout: 3-cols
@@ -420,54 +286,6 @@ layout: 2-cols
   ```
 
 ---
-layout: leaf
-background: img/caroline-selfors-r2jpr8MDw0I-unsplash.jpg
----
-<!-- Photo by <a href="https://unsplash.com/@cselfors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Caroline Selfors</a> on <a href="https://unsplash.com/s/photos/packing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
-
-# Still Building in Prod.
-
----
-layout: punch
----
-
-You're <small>(probably)</small> not your <mark>end-user</mark>
-
----
-
-# Behind the Hood
-
-- Rollup/Parcel/esbuild
-- Plugins Support
-- Optimize for production
-- Browserlist support for legacy browsers
-- Code-splitting/Lazy-loading
-- Treeshaking for ESM
-
-::linkroll::
-- [Rollup](https://rollupjs.org/guide/en/)
-- [esbuild](https://esbuild.github.io/)
-
----
-
-# The Treeshaking Mystery
-
-<Gif id="3sZv" provider="gifer" class="h-4/5" />
-
-::linkroll::
-- [Benefits of dead code elimination during bundling](https://exploringjs.com/es6/ch_modules.html#_benefit-dead-code-elimination-during-bundling)
-
----
-
-# Extending the Build
-
-- Plugins Interface
-- Snowpack: Custom API
-- Vite/WMR: Rollup Plugins
-- Support external asset types
-- Allow mixin types (MD Vue...)
-
----
 layout: punch
 ---
 
@@ -476,24 +294,16 @@ led by great **communities** <br>
 (Skypack, Vue, Preact...)
 
 ---
+layout: punch
+---
 
-# <emojione-waving-hand class="inline" /> ESM-Oriented Registries
+ESM-Oriented Registries
 
+::linkroll::
 - [Skypack](https://www.skypack.dev/)
 - [ESM.sh](https://esm.sh/)
 - [JSPM](https://jspm.org/)
 - [UNPkG](https://unpkg.com/)
-
----
-
-# <emojione-waving-hand class="inline" /> New Advanced <emojione-high-voltage class="inline" /> Tools
-
-- [Vitepress](vitepress.vuejs.org/)
-- [Slidev](https://sli.dev/)
-- [Viteshot](https://viteshot.com/)
-
-::linkroll::
-- [Awesome Vite](https://github.com/vitejs/awesome-vite)
 
 ---
 
