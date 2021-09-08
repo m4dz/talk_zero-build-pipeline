@@ -29,10 +29,28 @@ info: >
 The Eternal Sunshine of the
 
 ---
+
+# TL;DR
+
+<v-clicks>
+
+1. We're the only industry to ensure 30 years of backwards compatibility
+2. You should upgrade your DevTools, now
+3. It's no more than replacing a single file
+
+</v-clicks>
+
+---
 layout: media
 ---
 
 <Figure src="img/meme.jpg" caption="Modern Web Development"/>
+
+---
+layout: media
+---
+
+<Gif id="3orieJI3IdkKWIsAGA" caption="Web is 30 years old" class="h-4/5" />
 
 ---
 
@@ -44,12 +62,6 @@ layout: media
 - Reactive UI Framework
 - Packer/Bundler
 - Web Dev Server/Hot-Reload/HMR
-
----
-layout: media
----
-
-<Gif id="3orieJI3IdkKWIsAGA" caption="Web is 30 years old" class="h-4/5" />
 
 ---
 layout: punch
@@ -128,7 +140,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
 # The Transpilers
 
-- Inherited from FlashScript and CoffeeScript
+- Inherited from ActiveScript and CoffeeScript
 - Better doesn't mean simpler
 - Syntactic sugar on JS
 - Still only one JavaScript
@@ -242,10 +254,9 @@ during <mark>development</mark>
 
 ---
 
-# Web Developer Super Powers
+# Web Developer Superpowers
 
 - JavaScript Modules (ESM)
-- WebAssembly
 - Advanced Cache Policy
 - HTTP/2
 
@@ -259,7 +270,7 @@ during <mark>development</mark>
 - Instant Startup!
 - Built-in HMR support
 - Extensible
-- Focusing on dev, launching on prod
+- Focusing on codebase
 
 ---
 layout: leaf
@@ -384,9 +395,9 @@ class: sm
 # Vite, as-a-backend service
 
 <video playsinline autoplay loop class="max-h-full min-w-full m-auto h-4/5">
-  <source src="img/backlight_simba_demo.webm" />
-  <source src="img/backlight_simba_demo.mp4" />
-  <img src="img/backlight_simba_demo.png" alt="" >
+  <source src="/backlight-simba-demo.webm" >
+  <source src="/backlight-simba-demo.mp4" >
+  <img src="/backlight-simba-demo.png" alt="" >
 </video>
 
 ::linkroll::
@@ -410,7 +421,7 @@ layout: 2-cols
 - Error-prone on code analysis for deps
 - No MDX native support
 - MD Vue isn't standard
-- Dedicated worker for Vite previews
+- Dedicated Worker for Vite previews
   ```
   preview
     -> service-worker
@@ -465,7 +476,7 @@ You're <small>(probably)</small> not your <mark>end-user</mark>
 - Snowpack: Custom API
 - Vite/WMR: Rollup Plugins
 - Support external asset types
-- Allow mixin types (MD Vue...)
+- Allow types mix (MD Vue...)
 
 ---
 layout: punch
@@ -521,3 +532,10 @@ led by great **communities** <br>
 
 ::linkroll::
 - [kresus - Use Vite for bundling](https://framagit.org/kresusapp/kresus/-/merge_requests/1440)
+
+---
+
+> Who Controls the Past <br>
+> Controls the Future
+
+George Orwell *in* 1984
